@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Cookie Decliner</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { font-size: 18px; margin-top: 36px; margin-bottom: 8px; }
+    p  { margin-bottom: 16px; color: #333; }
+    .updated { font-size: 13px; color: #888; margin-bottom: 40px; }
+    a { color: #1a1a1a; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Cookie Decliner Chrome Extension · Last updated: April 2026</p>
+
+  <h2>Summary</h2>
+  <p>Cookie Decliner does not collect, transmit, or store any personal data. Everything happens locally inside your browser. No data ever leaves your device.</p>
+
+  <h2>What the extension does</h2>
+  <p>Cookie Decliner automatically detects and clicks "Reject All" buttons on cookie consent banners. It runs as a content script on every webpage you visit in order to detect consent banners — this is required for the extension to function, since cookie banners can appear on any site.</p>
+
+  <h2>Data collection</h2>
+  <p>We collect no data whatsoever. Specifically:</p>
+  <ul>
+    <li>We do not collect your browsing history</li>
+    <li>We do not collect the URLs of pages you visit</li>
+    <li>We do not collect information about which banners were declined</li>
+    <li>We do not use analytics or crash reporting tools</li>
+    <li>We do not use cookies ourselves</li>
+  </ul>
+
+  <h2>Local storage</h2>
+  <p>The extension uses Chrome's built-in <code>storage.local</code> API to save only two things locally on your device: whether the extension is enabled or paused, and a count of how many banners have been declined (shown in the popup). This data never leaves your device and is not accessible to us or any third party.</p>
+
+  <h2>Permissions explained</h2>
+  <p><strong>Access to all websites (<all_urls> via content scripts):</strong> Cookie consent banners can appear on any website, so the extension must be able to run on any page you visit. Without this, it could not detect or dismiss banners. The extension only reads page content to identify consent banner elements — it does not read, store, or transmit any other page content.</p>
+  <p><strong>Storage:</strong> Used solely to save your enabled/paused preference and the local banner count, as described above.</p>
+  <p><strong>Active tab:</strong> Used to interact with the current tab when you click the extension icon.</p>
+
+  <h2>Third parties</h2>
+  <p>Cookie Decliner does not share data with any third parties. There are no third-party SDKs, analytics services, or advertising networks included in the extension.</p>
+
+  <h2>Children's privacy</h2>
+  <p>This extension does not collect any data from any users, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we ever change this policy, we will update the date above and release a new version of the extension.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this privacy policy? Email us at: <a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a></p>
+</body>
+</html>
