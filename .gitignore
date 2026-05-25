@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+*.zip
+*.tar.gz
+dist/
+build/
+
+# Node (if you ever add tooling later)
+node_modules/
+package-lock.json
+yarn.lock

@@ -1,0 +1,25 @@
+{
+  "appName": {
+    "message": "Cookie Decliner — Automatyczne odrzucanie banerów"
+  },
+  "appDescription": {
+    "message": "Automatycznie klika 'Odrzuć wszystko' na banerach plików cookie. Obsługuje ponad 20 platform. Bez konta, bez chmury, bez śledzenia. 100% lokalnie."
+  },
+  "uiTitle":           { "message": "Cookie Decliner" },
+  "uiSubtitle":        { "message": "Odrzuca banery zgody" },
+  "toggleActive":      { "message": "Aktywne na wszystkich stronach" },
+  "togglePaused":      { "message": "Wstrzymane" },
+  "uiBannersLabel":    { "message": "banerów odrzuconych" },
+  "uiSitesLabel":      { "message": "stron obsłużonych" },
+  "uiRecentLabel":     { "message": "Ostatnie" },
+  "uiClear":           { "message": "Wyczyść" },
+  "logEmpty":          { "message": "Nie odrzucono jeszcze żadnych banerów. Odwiedź stronę z banerem cookie." },
+  "uiReviewPrompt":    { "message": "Podoba Ci się Cookie Decliner? Krótka recenzja bardzo pomaga!" },
+  "uiReviewCta":       { "message": "Recenzja" },
+  "uiSupportLink":     { "message": "☕ Wesprzyj Cookie Decliner na Ko-fi" },
+  "uiFooter":          { "message": "Wszystkie decyzje są podejmowane lokalnie — żadne dane nie opuszczają przeglądarki" },
+  "timeJustNow":       { "message": "przed chwilą" },
+  "timeMinSuffix":     { "message": " min temu" },
+  "timeHourSuffix":    { "message": " godz. temu" },
+  "timeDaySuffix":     { "message": " dni temu" }
+}

@@ -1,0 +1,25 @@
+{
+  "appName": {
+    "message": "Cookie Decliner — Banners automatisch weigeren"
+  },
+  "appDescription": {
+    "message": "Klikt automatisch 'Alles weigeren' op cookiebanners. Ondersteunt 20+ platforms. Geen account, geen cloud, geen tracking. 100% lokaal."
+  },
+  "uiTitle":           { "message": "Cookie Decliner" },
+  "uiSubtitle":        { "message": "Weigert toestemmingsbanners" },
+  "toggleActive":      { "message": "Actief op alle sites" },
+  "togglePaused":      { "message": "Gepauzeerd" },
+  "uiBannersLabel":    { "message": "banners geweigerd" },
+  "uiSitesLabel":      { "message": "sites verwerkt" },
+  "uiRecentLabel":     { "message": "Recent" },
+  "uiClear":           { "message": "Wissen" },
+  "logEmpty":          { "message": "Nog geen banners geweigerd. Bezoek een site met een cookiebanner." },
+  "uiReviewPrompt":    { "message": "Tevreden met Cookie Decliner? Een korte review helpt enorm!" },
+  "uiReviewCta":       { "message": "Review" },
+  "uiSupportLink":     { "message": "☕ Steun Cookie Decliner op Ko-fi" },
+  "uiFooter":          { "message": "Alles wordt lokaal beslist — geen data verlaat je browser" },
+  "timeJustNow":       { "message": "zojuist" },
+  "timeMinSuffix":     { "message": " min geleden" },
+  "timeHourSuffix":    { "message": " u geleden" },
+  "timeDaySuffix":     { "message": " d geleden" }
+}

@@ -1,0 +1,25 @@
+{
+  "appName": {
+    "message": "Cookie Decliner — Banner automatisch ablehnen"
+  },
+  "appDescription": {
+    "message": "Klickt automatisch 'Alle ablehnen' bei Cookie-Bannern. Unterstützt 20+ Plattformen. Kein Konto, keine Cloud, kein Tracking. 100% lokal."
+  },
+  "uiTitle":           { "message": "Cookie Decliner" },
+  "uiSubtitle":        { "message": "Lehnt Einwilligungs-Banner ab" },
+  "toggleActive":      { "message": "Auf allen Seiten aktiv" },
+  "togglePaused":      { "message": "Pausiert" },
+  "uiBannersLabel":    { "message": "Banner abgelehnt" },
+  "uiSitesLabel":      { "message": "Webseiten bearbeitet" },
+  "uiRecentLabel":     { "message": "Zuletzt" },
+  "uiClear":           { "message": "Leeren" },
+  "logEmpty":          { "message": "Noch keine Banner abgelehnt. Besuche eine Webseite mit Cookie-Banner." },
+  "uiReviewPrompt":    { "message": "Gefällt dir Cookie Decliner? Eine kurze Bewertung hilft sehr!" },
+  "uiReviewCta":       { "message": "Bewerten" },
+  "uiSupportLink":     { "message": "☕ Cookie Decliner auf Ko-fi unterstützen" },
+  "uiFooter":          { "message": "Alle Entscheidungen lokal — keine Daten verlassen deinen Browser" },
+  "timeJustNow":       { "message": "gerade eben" },
+  "timeMinSuffix":     { "message": " Min." },
+  "timeHourSuffix":    { "message": " Std." },
+  "timeDaySuffix":     { "message": " T." }
+}

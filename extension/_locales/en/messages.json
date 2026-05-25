@@ -1,0 +1,27 @@
+{
+  "appName": {
+    "message": "Cookie Decliner — Auto Reject Banners",
+    "description": "Extension name shown in Chrome Web Store and browser"
+  },
+  "appDescription": {
+    "message": "Auto-clicks 'Reject All' on cookie consent banners. Supports 20+ platforms. No account, no cloud, no tracking. 100% local.",
+    "description": "Extension description"
+  },
+  "uiTitle":           { "message": "Cookie Decliner" },
+  "uiSubtitle":        { "message": "Auto-rejects consent banners" },
+  "toggleActive":      { "message": "Active on all sites" },
+  "togglePaused":      { "message": "Paused" },
+  "uiBannersLabel":    { "message": "banners declined" },
+  "uiSitesLabel":      { "message": "sites handled" },
+  "uiRecentLabel":     { "message": "Recent" },
+  "uiClear":           { "message": "Clear" },
+  "logEmpty":          { "message": "No banners declined yet. Browse any site with a cookie banner." },
+  "uiReviewPrompt":    { "message": "Enjoying Cookie Decliner? A quick review really helps!" },
+  "uiReviewCta":       { "message": "Review" },
+  "uiSupportLink":     { "message": "☕ Support Cookie Decliner on Ko-fi" },
+  "uiFooter":          { "message": "All decisions happen locally — no data leaves your browser" },
+  "timeJustNow":       { "message": "just now" },
+  "timeMinSuffix":     { "message": "m ago" },
+  "timeHourSuffix":    { "message": "h ago" },
+  "timeDaySuffix":     { "message": "d ago" }
+}

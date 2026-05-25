@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    /* ── Header ── */
+    .header {
+      padding: 16px;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-left { display: flex; align-items: center; gap: 10px; }
+    .logo {
+      width: 32px; height: 32px;
+      background: #1a1a1a;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo svg { width: 18px; height: 18px; }
+    .header-title { font-size: 15px; font-weight: 600; }
+    .header-sub { font-size: 11px; color: #888; margin-top: 1px; }
+
+    /* ── Toggle ── */
+    .toggle-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .toggle-label { font-size: 13px; color: #333; font-weight: 500; }
+    .toggle {
+      position: relative;
+      width: 40px; height: 22px;
+      cursor: pointer;
+    }
+    .toggle input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #ddd;
+      border-radius: 999px;
+      transition: background 0.2s;
+    }
+    .slider::before {
+      content: '';
+      position: absolute;
+      width: 16px; height: 16px;
+      left: 3px; top: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    input:checked + .slider { background: #1a1a1a; }
+    input:checked + .slider::before { transform: translateX(18px); }
+
+    /* ── Stats ── */
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .stat {
+      background: #fff;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 26px;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label { font-size: 11px; color: #888; }
+
+    /* ── Log ── */
+    .log-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px 6px;
+    }
+    .log-title { font-size: 12px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 0.05em; }
+    .clear-btn {
+      font-size: 11px;
+      color: #c00;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 2px 0;
+    }
+    .clear-btn:hover { text-decoration: underline; }
+
+    #log-list {
+      max-height: 180px;
+      overflow-y: auto;
+      padding: 0 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .log-empty {
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+      padding: 16px 0;
+    }
+    .log-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      background: #f8f8f8;
+      border-radius: 7px;
+      font-size: 12px;
+    }
+    .log-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      flex-shrink: 0;
+    }
+    .log-host { font-weight: 500; color: #1a1a1a; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .log-time { color: #aaa; flex-shrink: 0; }
+
+    /* ── Review nudge ── */
+    .review-nudge {
+      margin: 10px 16px 0;
+      background: #f5f3ff;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: #3C3489;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .review-nudge.show { display: flex; }
+    .review-nudge a {
+      color: #534AB7;
+      font-weight: 600;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    /* ── Support / Footer ── */
+    .support {
+      padding: 10px 16px;
+      text-align: center;
+      border-top: 1px solid #f0f0f0;
+    }
+    .support a { font-size: 12px; color: #888; text-decoration: none; }
+    .footer {
+      padding: 10px 16px;
+      border-top: 1px solid #f0f0f0;
+      font-size: 11px;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">
+        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" r="7" stroke="white" stroke-width="1.5"/>
+          <path d="M6 9l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="header-title" id="ui-title">Cookie Decliner</div>
+        <div class="header-sub" id="ui-subtitle">Auto-rejects consent banners</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-wrap">
+    <span class="toggle-label" id="toggle-label">Active on all sites</span>
+    <label class="toggle">
+      <input type="checkbox" id="enabled-toggle" checked />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num" id="total-count">0</div>
+      <div class="stat-label" id="ui-banners-label">banners declined</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="site-count">0</div>
+      <div class="stat-label" id="ui-sites-label">sites handled</div>
+    </div>
+  </div>
+
+  <div class="log-header">
+    <span class="log-title" id="ui-recent-label">Recent</span>
+    <button class="clear-btn" id="clear-log">Clear</button>
+  </div>
+  <div id="log-list"></div>
+
+  <div id="review-nudge" class="review-nudge">
+    <span id="ui-review-prompt">Enjoying Cookie Decliner? A quick review really helps!</span>
+    <a id="review-link"
+       href="https://chromewebstore.google.com/detail/pgplomkmnnlpnjnhlcbgbjllgjemekdl/reviews"
+       target="_blank"
+       rel="noopener noreferrer">
+      <span id="ui-review-cta">Review</span> ↗
+    </a>
+  </div>
+
+  <div class="support">
+    <a href="https://ko-fi.com/cookiedecliner" target="_blank" rel="noopener noreferrer" id="ui-support-link">
+      ☕ Support Cookie Decliner on Ko-fi
+    </a>
+  </div>
+
+  <div class="footer" id="ui-footer">All decisions happen locally — no data leaves your browser</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

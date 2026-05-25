@@ -1,0 +1,25 @@
+{
+  "appName": {
+    "message": "Cookie Decliner — Refus automatique des bannières"
+  },
+  "appDescription": {
+    "message": "Clique automatiquement sur 'Tout refuser' sur les bannières de cookies. Compatible avec plus de 20 plateformes. Sans compte, sans cloud, sans suivi. 100% local."
+  },
+  "uiTitle":           { "message": "Cookie Decliner" },
+  "uiSubtitle":        { "message": "Refuse les bannières de consentement" },
+  "toggleActive":      { "message": "Actif sur tous les sites" },
+  "togglePaused":      { "message": "En pause" },
+  "uiBannersLabel":    { "message": "bannières refusées" },
+  "uiSitesLabel":      { "message": "sites traités" },
+  "uiRecentLabel":     { "message": "Récents" },
+  "uiClear":           { "message": "Effacer" },
+  "logEmpty":          { "message": "Aucune bannière refusée pour le moment. Visitez un site avec une bannière de cookies." },
+  "uiReviewPrompt":    { "message": "Vous aimez Cookie Decliner ? Un avis rapide nous aide beaucoup !" },
+  "uiReviewCta":       { "message": "Avis" },
+  "uiSupportLink":     { "message": "☕ Soutenir Cookie Decliner sur Ko-fi" },
+  "uiFooter":          { "message": "Tout est décidé localement — aucune donnée ne quitte votre navigateur" },
+  "timeJustNow":       { "message": "à l'instant" },
+  "timeMinSuffix":     { "message": " min" },
+  "timeHourSuffix":    { "message": " h" },
+  "timeDaySuffix":     { "message": " j" }
+}
